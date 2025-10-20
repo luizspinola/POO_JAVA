@@ -1,0 +1,21 @@
+TD 1 POO
+
+Nom: SPINOLA SILVA
+Prénom: Luiz Felipe
+
+
+EXERCISE 1
+Attributs: abs et ord
+Constructeurs: public Coord (ligne 5) e public Coord (ligne 10 - default)
+Méthodes: afficher
+
+La méthode afficher écrit les coordonnés d'un objet Coord specifique.
+
+EXERCISE 2
+
+EXERCISE 3
+
+Cooord myCoord = new Coord(0,0);
+
+double myAbs = myCoord.abs;
+double myOrd = myCoord.ord;
