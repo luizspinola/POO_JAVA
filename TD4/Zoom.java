@@ -1,3 +1,3 @@
 public interface Zoom {
-    double zoomer(double factor);
+    void zoomer(double factor);
 }
