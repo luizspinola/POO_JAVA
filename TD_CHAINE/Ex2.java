@@ -8,9 +8,11 @@ public class Ex2 {
         nb_mots = input.nextInt();
         String[] mots = new String[nb_mots+1];
         System.out.println("donnez vos mots");
-        for (int i = 0; i < nb_mots; i++) {
+        for (int i = 0; i <= nb_mots; i++) {
             mots[i] = input.nextLine();
+            mots[i] = mots[i].toLowerCase();
         }
+        
         Arrays.sort(mots);
         System.out.println("Liste par ordre alphabetique :");
         for (String i : mots) {
