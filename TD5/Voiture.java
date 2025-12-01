@@ -1,11 +1,18 @@
 public class Voiture extends VehiculeARoues{
 
-    public static final int nbRoues = 4;
-    public static final int vitesseMaximale = 200;
+    public static final int nbRouesMaximale = 4;
+    public static final int vitesseMaximale = 130;
     
     public Voiture(String couleur, int vitesseCourante,
-                   Direction directionCourante, boolean etat)
+                   Direction directionCourante, boolean etat,
+                int nbRoues) throws VitesseExcessive, NbRouesImpossible
         {
         super(couleur, nbRoues, vitesseCourante, directionCourante, etat, vitesseMaximale);
+        if(vitesseCourante > vitesseMaximale || vitesseCourante < 0){
+                throw new VitesseExcessive();
+            }
+            else if(nbRoues != nbRouesMaximale){
+                throw new NbRouesImpossible();
+            }
         }
 }
