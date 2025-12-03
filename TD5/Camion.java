@@ -10,9 +10,13 @@ public class Camion extends VehiculeARoues{
         if(vitesseCourante > vitesseMaximale){
                 throw new VitesseExcessive();
             }
-            else if(nbRoues != 4 || nbRoues != 6 || nbRoues != 8){
+            else if(!(nbRoues == 4 || nbRoues == 6 || nbRoues == 8)){
                 throw new NbRouesImpossible();
             }
+        }
+
+        public void afficher(){
+            System.out.println("Camion : " + this.couleur + ", " + this.vitesseCourante + " km/h, " + this.directionCourante.nom + ", " + this.etat + ", " + this.nbRoues + " roues.");
         }
 
 }

@@ -84,4 +84,8 @@ public abstract class VehiculeARoues implements Dirigeable{
         return directionCourante;
     }
 
+    public void changerEtat(){
+            this.etat = !this.etat;
+        }
+
 }

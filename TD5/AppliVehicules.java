@@ -51,27 +51,46 @@ public class AppliVehicules {
         catch(NbRouesImpossible e){ System.out.println(e); }
         catch (VitesseExcessive e){ System.out.println(e);}
 
-        try{tonCamion=new Camion("rose", 0, 50, Dirigeable.Est,true);}
+        try{tonCamion=new Camion("rose", 4, 120, Dirigeable.Est,true);}
         catch(NbRouesImpossible e){ System.out.println(e); }
         catch (VitesseExcessive e){ System.out.println(e);}
 
-        try{sonCamion=new Camion("jaune", 0, 50, Dirigeable.Est,true);}
+        try{sonCamion=new Camion("jaune", 10, -50, Dirigeable.Est,true);}
         catch(NbRouesImpossible e){ System.out.println(e); }
         catch (VitesseExcessive e){ System.out.println(e);}
 
-        try{notreCamion=new Camion("rouge", 0, 50, Dirigeable.Est,true);}
+        try{notreCamion=new Camion("rouge", 4, 50, Dirigeable.Est,true);}
         catch(NbRouesImpossible e){ System.out.println(e); }
         catch (VitesseExcessive e){ System.out.println(e);}
 
         
 
-        if(maVoiture!=null){
-            maVoiture.afficher();
-            maVoiture.faireDemiTour();
-            try{maVoiture.accelerer(40);}
+        if(notreVoiture!=null){
+            notreVoiture.afficher();
+            notreVoiture.faireDemiTour();
+            try{notreVoiture.accelerer(40);}
             catch(VitesseExcessive e){ System.out.println(e);}
-            maVoiture.afficher();
-            maVoiture.changerEtat();
+            notreVoiture.afficher();
+            notreVoiture.changerEtat();
+        }
+
+        if(notreVelo!=null){
+            notreVelo.afficher();
+            notreVelo.faireDemiTour();
+            try{notreVelo.accelerer(40);}
+            catch(VitesseExcessive e){ System.out.println(e);}
+            notreVelo.afficher();
+            notreVelo.changerEtat();
+
+        }
+
+        if(notreCamion!=null){
+            notreCamion.afficher();
+            notreCamion.faireDemiTour();
+            try{notreCamion.accelerer(40);}
+            catch(VitesseExcessive e){ System.out.println(e);}
+            notreCamion.afficher();
+            notreCamion.changerEtat();
 
         }
     }

@@ -1,5 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.Hashtable;
 public class Ex2 {
     public static void main(String[] args) {
         int nb_mots;
@@ -10,7 +13,7 @@ public class Ex2 {
         System.out.println("donnez vos mots");
         for (int i = 0; i <= nb_mots; i++) {
             mots[i] = input.nextLine();
-            mots[i] = mots[i].toLowerCase();
+            mots[i] = mots[i].toLowerCase();        
         }
         
         Arrays.sort(mots);

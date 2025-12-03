@@ -15,4 +15,8 @@ public class Voiture extends VehiculeARoues{
                 throw new NbRouesImpossible();
             }
         }
+
+        public void afficher(){
+            System.out.println("Voiture : " + this.couleur + ", " + this.vitesseCourante + " km/h, " + this.directionCourante.nom + ", " + this.etat + ", " + this.nbRoues + " roues.");
+        }
 }

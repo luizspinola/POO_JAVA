@@ -16,4 +16,8 @@ public class Velo extends VehiculeARoues{
             }
             
         }
+
+        public void afficher(){
+            System.out.println("Velo : " + this.couleur + ", " + this.vitesseCourante + " km/h, " + this.directionCourante.nom + ", " + this.etat + ", " + this.nbRoues + " roues.");
+        }
 }
