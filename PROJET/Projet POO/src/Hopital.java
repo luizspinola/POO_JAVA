@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 public class Hopital {
-    public static final String Nom;
-    protected ArrayList<Medecin> patient_tab = new ArrayList<>();
-    protected final int nbChambre;
+    public final String Nom;
+    protected ArrayList<Medecin> Medecin_tab = new ArrayList<>();
+    protected final int nbChambre = 100;
     protected ArrayList<Integer> chambreTableau = new ArrayList<>();
 
 }
