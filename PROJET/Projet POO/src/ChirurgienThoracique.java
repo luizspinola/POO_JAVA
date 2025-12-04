@@ -1,12 +1,11 @@
-public class Obstetricien extends Medecin{
-    
+public class ChirurgienThoracique extends Chirurgien{
     public static final int nb_patiants_max = 4;
     Hopital Hopital;
     String NomPrenom;
     int Age;
     Sexe Sexe;
 
-    public Obstetricien(String NomPrenom, int Age, Sexe Sexe, Hopital Hopital){
+    public ChirurgienThoracique(String NomPrenom, int Age, Sexe Sexe, Hopital Hopital){
         super(NomPrenom, Age, Sexe, Hopital);
     }
 }
