@@ -1,11 +1,10 @@
 import java.util.ArrayList;
-import java.util.Random;
 public class Hopital {
     public final String Nom;
     protected ArrayList<Medecin> Medecin_tab = new ArrayList<>();
     public final int nbChambre;
     protected ArrayList<Integer> chambreTableau = new ArrayList<>();
-    private Random random;
+    private int occupiedRooms = 0;
 
     public Hopital(String Nom, int nbChambre){
         this.Nom = Nom;
@@ -17,14 +16,15 @@ public class Hopital {
     }
 
     public int roomSelect(){
-        int randomIndex = random.nextInt(chambreTableau.size());
-        int selectedRoom = chambreTableau.get(randomIndex);
-        chambreTableau.remove(randomIndex);
+        int selectedRoom = chambreTableau.get(occupiedRooms+1);
+        chambreTableau.remove(occupiedRooms+1);
+        occupiedRooms++;
         return selectedRoom;
     }
 
     public void openRoom(int roomNumber){
         chambreTableau.add(roomNumber);
+        occupiedRooms--;
     }
 
 
