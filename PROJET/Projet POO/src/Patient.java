@@ -1,7 +1,9 @@
 public class Patient extends Personne{
-
-    public Patient(String NomPrenom, int Age, Sexe Sexe){
+    public Boolean Allergique;
+    public Patient(String NomPrenom, int Age, Sexe Sexe, Boolean Allergique){
         super(NomPrenom, Age, Sexe);
+        this.Allergique = Allergique;
+
     }
 
     void Afficher_Test(){
